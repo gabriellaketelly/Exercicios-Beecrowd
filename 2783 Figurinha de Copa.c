@@ -10,15 +10,15 @@ int main() {
 
     for (int i = 0; i < carimbadas; i++) {
         scanf("%d", &figurinha_carimbada);
-        if (figurinha_carimbada >= 1 && figurinha_carimbada <= espacos) {
-            carimbada[figurinha_carimbada - 1] = 1; // Ajuste de índice para 0 a espacos-1
-        }
+        if (figurinha_carimbada >= 1 && figurinha_carimbada <= espacos) {   //garantir que tá no intervalo entre 0 e a quantidade de espaco delimitada no scanf.
+            carimbada[figurinha_carimbada - 1] = 1; // Ajuste de índice para 0 a espacos-1, já que a alocação de memoria começa em 0. Entao só for 10 espacos 
+        }                                          // e a figurinha for a 10, ele vai alocar no quadrado 10-1 = 9, já que 10 espaços é de 0-9. 
     }
 
     for (int i = 0; i < compradas; i++) {
         scanf("%d", &figurinha_comprada);
         if (figurinha_comprada >= 1 && figurinha_comprada <= espacos) {
-            comprada[figurinha_comprada - 1] = 1; // Ajuste de índice para 0 a espacos-1
+            comprada[figurinha_comprada - 1] = 1; // Ajuste de índice para 0 a espacos-1.
         }
     }
 

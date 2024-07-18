@@ -7,7 +7,7 @@ int main(){
 
     while (scanf("%d %d", &bilhetes, &convidados) && bilhetes > 0 && convidados > 0) {
 
-        double quant[20001]={0};
+        int quant[20001]={0};
         int contador = 0;
         int numero;
 
